@@ -23,7 +23,11 @@ const PORT = 3000 || process.env.PORT ;
 
 
 seedProducts();
-app.get('/', (req, res) => {
+app.get('/h', (req, res) => {
+    res.send('Hello World!');
+});
+
+app.get('/products', (req, res) => {
     res.send('Hello World!');
 });
 
